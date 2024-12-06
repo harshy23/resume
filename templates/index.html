@@ -1,0 +1,237 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayank Narang Resume</title>
+
+    <!-- bootstrap -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.form.min.css" integrity="sha384-uO3ln9qQ4/GlDH6ALynrG5T99Nmz75iYnS1L7a0UrLEsqZ+kKhhW9Ngj/s13Ty8VG" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="prism.css"> -->
+
+    <!-- linking swiper jss -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- <script src="prism.js"></script> -->
+</head>
+<body>
+    <div class="shop">
+        <div class="block">
+            <p>Want to shop?</p>
+            <img src="">
+        </div>
+    </div>
+    <div class="home">
+        <div class="box container">
+            <div class="names bottom">
+                <h1 id="n1"><b>Harsh</b> <span><b>Mishra</b></span></b></h1>
+                <h1 id="n2">Harsh <span>Mishra</span></h1>
+                <h1 id="n3">Harsh <span>Mishra</span></h1>
+            </div>
+            <div class="left text top">
+                <p>My coding style is distinguished by a unique blend of creativity and technical prowess</p> 
+            <!-- adding j.s -->
+              <div class="ldpop top">
+                <iframe src="https://www.linkedin.com/in/harsh-mishra-86210721b/" frameborder="0"></iframe>
+              </div>
+              <div class="ytpop top">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xfiDoM-qm0A?si=Xi3WcSe9fVj1aEan" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="inpop top">
+                <iframe src="https://www.instagram.com/naya.harshy/" frameborder="0"></iframe>
+              </div>
+              <div class="social icon">
+                <i class="fa-brands fa-linkedin fa-bounce"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i onclick="showpop3()" class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+            <div class="right text top">
+
+                <p>trdhtjhtjh hthtfju  jtyj tycjgxaswrf jm lolgq warfaw g k l;joi;; b,cjtfge r z trdhtjhtjh hthtfju  jtyj tycjgxaswrf 
+                    jm lolgq warfaw g k l;joi;; b,cjtfge r z</p>
+                <div class="scroll icon">
+                    <i class="fa-solid fa-circle-chevron-down"></i>
+
+                </div>
+            </div>
+            <div class="images top secondtop">
+                <img class="bottom2"   id="l1" src="{% static 'Nested_Sequence_02.00_09_59_19.Still001-removebg-preview.png' %}">
+                <img class="bottom2" id="l2" src="{% static 'Nested_Sequence_02.00_09_59_19.Still001-removebg-preview.png' %}">
+                <img class="bottom2" id="l3" src="{% static 'Nested_Sequence_02.00_09_59_19.Still001-removebg-preview.png' %}">
+            </div>
+
+        </div>
+        <div class="menue">
+            <p>About</p>
+            <p>Projects</p>
+            <p>Skills</p>
+            <p>Contact</p>
+        </div>
+        <div class="about">
+            <div class="about-me">
+                <p>about me</p>
+            </div>
+            <div class="description">
+                <p>
+                    I am this and i can do that so i also know those thing so you can hire me for that i hope you all understood that i writen I am this and i can do that so i also know those thing so you can hire me for that i hope you all understood that i writen
+                </p>
+            </div>
+            <div class="photo">
+                <img class="dp" src="{% static 'dp.jpg' %}">
+            </div>
+
+        </div>
+        <div class="projects">
+            <div class="real-state">
+                <i class="fa-solid fa-hotel"></i>
+                
+                <p>The tech stack includesPython, Pandas, and Matplotlib.
+                    I developed a predictive model for estimating real estate
+                    prices. Through data preprocessing, descriptive statistical
+                    analysis, and visualizations like histograms and scatter
+                    plots
+                    <i class="fa-solid fa-code realcode"></i>
+                </p>
+            </div>
+            <div class="movie">
+                <p>The tech stack includes Python, NumPy ,Pandas for data
+                    manipulation and preprocessing and streamlit for
+                    deployment
+                    The project involved analyzing a dataset of movies,
+                    including information such as budget, genres, production
+                    companies, release date, and ratings.
+                    Implemented collaborative filtering algorithms 
+                    <i class="fa-solid fa-code moviecode"></i>
+                    <i class="fa-solid fa-laptop-code movielive"></i>
+               </p>
+                <i class="fa-solid fa-video"></i>
+            </div>
+            <div class="resume">
+                <i class="fa-solid fa-file"></i>
+                <p>The project included functionalities such as book
+                    lending, book return, and book addition.
+                    I implemented object-oriented programming
+                    concepts to create a library class. Key features of
+                    project included data management using
+                    dictionaries, user input handling, and error
+                    handling.
+                    <i class="fa-solid fa-code rescode"></i>
+                    <i class="fa-solid fa-laptop-code reslap"></i>
+                </p>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="skill">
+                <p>Tech Stack</p>
+            </div>
+            <div class="logo ">
+                <div class="arrow">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>                
+                <div class="set1">
+                    <div class="python logo_box "><i class="fa-brands     fa-python"></i><p>Python<p></div>
+                    <div class="ml logo_box  "><i class="fa-solid     fa-robot"></i><p>M.L.<p></p></div>
+                    <div class="dsa logo_box "><i     class="fa-solidfa-folder-tree"></i><p>Data   Structire &     Algo.</div>
+                </div>
+                <div class="set2">
+                    <div class="sql logo_box "><i class="fa-solid     fa-database"></i><p>S.Q.L<p></p></div>
+                    <div class="html logo_box "><i class="fa-brands     fa-html5"></i><p>HTML<p></p></div>
+                    <div class="css logo_box "><i class="fa-brands     fa-css3-alt"></i><p>C.S.S<p></p></div>
+                </div>
+                <div class="set3">
+                    <div class="js logo_box "><i class="fa-brands     fa-js"></i><p>Java Script<p></p></div>
+                </div>
+                
+                <!-- <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+                
+            </div>
+
+        </div>
+        <div class="inf" id="contact-section">
+            <div class="contact">
+                <p>CONTACT ME</p>
+            </div>
+            <div class="ctim">
+                <img class="bottom22" id="f1" src="{% static 'harsh panels (1).png' %}">
+                <img class="bottom22" id="f2" src="{% static 'harsh panels (1).png' %}">
+                <img class="bottom22" id="f3" src="{% static 'harsh panels (1).png' %}">
+            </div>
+            <div class="no">
+                <!-- <p>CONTACT ME</p> -->
+                <form method="POST" action="register" >
+                    {% csrf_token %}
+                    {% for message in messages %}
+                        <div class="error-message"style="font-size: 25px;">{{ message }}</div>
+                    {% endfor %}
+                    <div class="name">
+                        <input class="first" type="text" name="firstname" placeholder="&nbsp;First Name">
+                        {% for message in messages %}
+                            {% if message.tags == 'error' and 'firstname' in message.message %}
+                                <span class="error-message">{{ message }}</span>
+                            {% endif %}
+                        {% endfor %}
+                        <input class="last" type="text" name="lastname" placeholder="&nbsp;Last Name">
+                        {% for message in messages %}
+                            {% if message.tags == 'error' and 'lastname' in message.message %}
+                                <span class="error-message">{{ message }}</span>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <input type="text" name="email" placeholder="&nbsp;Email ID">
+                    {% for message in messages %}
+                        {% if message.tags == 'error' and 'email' in message.message %}
+                            <span class="error-message">{{ message }}</span>
+                        {% endif %}
+                    {% endfor %}
+                    <textarea type="text" rows="5" name="value" placeholder="&nbsp;Feedback...."></textarea>
+                    <button type="submit" class="btn"  >Submit</button>
+                </form>
+
+                <!-- <script>
+                      const but = document.querySelector(".btn")
+                      
+                      but.addEventListener ('click',()=>{
+                        
+                        document.querySelector('.inf').scrollIntoView({behavior:"smooth"})
+                      });
+                    </script> -->
+
+                <!-- <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>Email</p>
+                </div> -->
+                <!-- <div class="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>Phone No.</p>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+    <!-- <footer>     
+         <div class="email">
+            <i class="fa-solid fa-envelope"></i>
+            <p>Email</p>
+        </div> 
+        <div class="phone">
+            <i class="fa-solid fa-phone"></i>
+            <p>Phone No.</p>
+        </div> 
+    </footer> -->
+
+<!-- linking swiperjs script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="{% static 'app.js' %}"></script>
+
+    
+</body>
+</html>

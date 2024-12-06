@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    background-color: rgb(205,232,202);
+    /* justify-content: space-between; */
+    overflow: hidden;
+}
+
+.title{
+    height: 300px;
+    width : 700px;
+    display: flex;
+    align-items: center;
+    /* position:absolute; */
+    /* margin-top: 40px; */
+    margin-left: 250px;
+
+}
+
+title img{
+    height: 100%;
+    width: 100%;
+}
+.grp{
+    height: 300px;
+    width : 300px;
+    /* position:absolute; */
+    /* margin-top: 16px; */
+    margin-left: 150px;
+
+}
+
+.grp img{
+    height: 100%;
+    width: 100%;
+}
+
+.product{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 10px;
+
+}
+
+.box1{
+
+    height: 300px;
+    width: 40%;
+    margin-top: 50px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box_content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    gap: 30px;
+}
+
+.box_content img{
+    height: 200px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    margin-left: 20px;
+    /* box-shadow: 50px; */
+}
+
+.text{
+    font-size: 20px;
+    /* gap: ; */
+}
+
+.text .desc{
+    margin-top: 10px;
+}
+
+.text .price{
+    margin-top: 80px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    height: 200px;
+    background-color: rgb(63, 61, 42);
+}
+
+.contact{
+    width: 80%;
+    font-size: 30px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume{
+
+    height: 100px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: white;
+    color: yellowgreen;
+    left: -2px;
+    margin-top: 300px;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    position: fixed;
+    transition: 1sec ease-in-out;
+
+}
+
+.resume:hover{
+    transform: scale(1.2);
+    left:-2px
+}

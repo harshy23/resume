@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style2.css' %}" />
+    <script src="https://api.razorpay.com/v1/assets/checkout.js"></script>
+  </head>
+  <body>
+    <div class="resume">
+      <div class="block">
+        <p>back to my page</p>
+        <img>
+      </div>
+    </div>
+    <div class="header">
+      <div class="title">
+        <img src="{% static 'title.png' %}" />
+      </div>
+      <div class="grp">
+        <img src="{% static 'grp.png' %}" />
+      </div>
+    </div>
+    <div class="product">
+      {% for product in products %}
+      <div class="box1">
+        <div class="box_content">
+          <img src="{% static product.image %}" alt="{{ product.name }}">
+
+            <div class="text">
+            <h4>{{ product.name }}</h4>
+            <p class="desc">{{ product.desc }}</p>
+            <p class="price">₹{{ product.price }}</p>
+            <form method="POST" action="{% url 'payment' product.id %}">
+              {% csrf_token %}
+              <button type="submit">Pay with Razorpay</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      <!-- <div class="box1">
+            <div class="box_content">
+               <img src="{% static 'comic.jpg' %}">
+               <div class="text">
+                <h4>Comic Casata</h4>
+                <p class="desc">this the comic that was written by the grp of legends whom were came to the earth on my bithaday occasion </p>
+                <p class="price">$500</p>
+            </div>
+            </div>
+
+        </div>
+        <div class="box1">
+            <div class="box_content">
+                <img src="{% static 'comic.jpg' %}">
+                <div class="text">
+                    <h4>Comic Casata</h4>
+                    <p class="desc">this the comic that was written by the grp of legends whom were came to the earth on my bithaday occasion </p>
+                    <p class="price">$500</p>
+                </div>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="box_content">
+                <img src="{% static 'comic.jpg' %}">
+                <div class="text">
+                    <h4>Comic Casata</h4>
+                    <p class="desc">this the comic that was written by the grp of legends whom were came to the earth on my bithaday occasion </p>
+                    <p class="price">$500</p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <footer>
+      <div class="contact">
+        <p>instagram</p>
+        <p>contact</p>
+        <p>email</p>
+      </div>
+    </footer>
+  </body>
+  <script src="{% static 'product.js' %}"></script>
+</html>

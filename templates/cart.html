@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  {% for item in pro %}
+  <div class="cart-item">
+      <img src="{% static item.product.image %}" alt="{{ item.product.name }}">
+      <h4>{{ item.product.name }}</h4>
+      <p>Quantity: {{ item.quantity }}</p>
+      <p>Price: ₹{{ item.product.price }}</p>
+      <p>Subtotal: ₹{{ item.product.price * item.quantity }}</p>
+  </div>
+{% endfor %}
+
+Total Price: ₹{{ total_price }}
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment</title>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <link rel="stylesheet" href="{% static 'style_payment.css' %}" />
+</head>
+<body>
+    <div class="box1">
+        <div class="box_content">
+          
+            <img src="{% static product_image %}" >
+            <div class="text">
+            <h1>Payment for {{ product_name }}</h1>
+            <p class="price">Amount: ₹{{ product_price }}</p>
+           </div>
+        </div>
+    </div>
+    
+
+    <script>
+        var options = {
+            "key": "{{ razorpay_key }}", // Replace with your Razorpay Key ID
+            "order_id": "{{ order_id }}", // Amount in paise
+            "currency": "INR",
+            "description": "Payment for {{ product_name }}",
+            "handler": function (response){
+                // Handle payment success
+                // alert(response.razorpay_payment_id);
+                // Redirect to success page or handle further actions
+                window.location.href = "/payment_success/?product_id=" + "{{ product_id }}" // Replace with your success URL
+            },
+            "prefill": {
+                "name": "Your Name",
+                "email": "your_email@example.com",
+                "contact": "9876543210"
+            }
+        };
+        var rzp1 = new Razorpay(options);
+        rzp1.on('payment.failed', function (response){
+            // Handle payment failure
+            // alert(response.error.code);
+            // Redirect to failure page or handle further actions
+            window.location.href = "/payment_failure/?product_id=" + "{{ product_id }}"; // Replace with your failure URL
+        });
+        rzp1.open();
+    </script>
+</body>
+</html>
